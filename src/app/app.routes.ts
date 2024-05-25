@@ -10,6 +10,10 @@ export const routes: Routes = [
         loadComponent: () => import('./presentation/login/login.component').then(m => m.LoginComponent)
     },
     {
+        path: 'chat',
+        loadComponent: () => import('./presentation/chat/chat.component').then(m => m.ChatComponent)
+    },
+    {
         path: '',
         redirectTo: '',
         pathMatch: 'full'
